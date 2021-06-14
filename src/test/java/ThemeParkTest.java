@@ -32,4 +32,11 @@ public class ThemeParkTest {
         themePark.addStall(candyflossStall);
         assertEquals(1, themePark.getStalls());
     }
+
+    @Test
+    public void getIReviewed(){
+        themePark.addAttraction(dodgems);
+        themePark.addStall(candyflossStall);
+        assertEquals(2, themePark.getAllReviewed().size());
+    }
 }
