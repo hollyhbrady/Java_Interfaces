@@ -9,11 +9,16 @@ public class Playground extends Attraction implements ISecurity {
         super(name, rating);
     }
 
+//    @Override
+//    public boolean isAllowedTo(Visitor visitor) {
+//        if (visitor.getAge() >= 15) {
+//            return false;
+//        }
+//        return true;
+//    }
+
     @Override
     public boolean isAllowedTo(Visitor visitor) {
-        if (visitor.getAge() > 15) {
-            return false;
-        }
-        return true;
+        return visitor.getAge() <= 15;
     }
 }

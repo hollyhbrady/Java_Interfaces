@@ -16,6 +16,7 @@ public class Visitor {
         this.age = age;
         this.height = height;
         this.money = money;
+        this.visitedAttractions = new ArrayList<Attraction>();
     }
 
     public int getAge() {
@@ -30,7 +31,7 @@ public class Visitor {
         return money;
     }
 
-    public void addAttraction(Visitor visitor, Attraction attraction){
+    public void addAttraction(Attraction attraction){
         this.visitedAttractions.add(attraction);
     }
 

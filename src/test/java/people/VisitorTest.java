@@ -42,7 +42,7 @@ public class VisitorTest {
 
     @Test
     public void canAddToVisitedAttractions(){
-        visitor.addAttraction(visitor, dodgems);
+        visitor.addAttraction(dodgems);
         assertEquals(1, visitor.getVisitedAttractions());
     }
 }
